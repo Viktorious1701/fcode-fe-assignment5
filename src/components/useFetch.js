@@ -22,6 +22,7 @@ const useFetch = (url) => {
           cache.current[url] = data;
           setData(data);
           setStatus("fetched");
+          console.log("data from API");
         }
       } catch (error) {
         setStatus("error");
